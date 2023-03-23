@@ -13,23 +13,22 @@ pauseX2 = centerX + pauseWidth*2/15;
 pauseY2 = height * 1/3;
 pauseHeight = height * 1/9;
 //
-stopX = centerX - pauseWidth - pauseWidth*2/15; {
-stopY = pauseY1;
+stopX = width *1/2.75; 
+stopY = height * 1/3;
 stopWidth = height * 1/9;
 stopHeight = height * 1/9;
 //
-playX = 22;
-playY = 22;
-playWidth = 22;
-playHeight = 22;
+playX1 = centerX - pauseWidth - pauseWidth*2/15;
+playY1 = height * 1/3;
+playX2 = width * -1/9;
+playY2 = height * 1/9;
+playX3 = width * 1/9;
+playY3 = height * 1/9 ;
 }
 //End setup
 //
 void draw () {
-  rect( pauseX1, pauseY1, pauseWidth, pauseHeight ) ;
-  rect( pauseX2, pauseY2, pauseWidth, pauseHeight ) ;
-  rect( stopX, stopY, stopWitdh, stopHeight ) ; 
-  triangle(playX1 playY1, playX2, playY2, playX3, playY3) ;
+  drawMusicButtons();
 }
 //End draw
 //
