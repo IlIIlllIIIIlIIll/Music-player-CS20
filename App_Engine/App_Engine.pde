@@ -18,12 +18,12 @@ stopY = height * 1/3;
 stopWidth = height * 1/9;
 stopHeight = height * 1/9;
 //
-playX1 = centerX - pauseWidth - pauseWidth*2/15;
-playY1 = height * 1/3;
-playX2 = width * -1/9;
-playY2 = height * 1/9;
-playX3 = width * 1/9;
-playY3 = height * 1/9 ;
+playX1 = pauseX1 + (pauseX1/9) ;
+playY1 = pauseY1;
+playX2 = centerX;
+playY2 = pauseY1 ;
+playX3 = pauseX1 ;
+playY3 = pauseY1 * 3/2 ;
 }
 //End setup
 //
